@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/layOut_bottom_theloai"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thành viên :"
+        android:textSize="20dp"
+        android:textColor="#E8594F"
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:id="@+id/spin_thanhvien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sách :"
+        android:textColor="#E8594F"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:id="@+id/spin_sach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E8594F"
+        android:text="Tiền thuê sách:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+  <EditText
+      android:id="@+id/edt_tienthue"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Nhập giá tiền thuê"
+      />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_themphieumuon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Thêm"
+            android:backgroundTint="#5465C6"
+            />
+        <Button
+            android:id="@+id/btn_huy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Huỷ"
+            android:backgroundTint="#8064B1"
+            />
+    </LinearLayout>
+
+</LinearLayout>
